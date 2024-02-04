@@ -1,0 +1,29 @@
+.friendItem{
+    display: flex;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.12);
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.status{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.online{
+    composes: status;
+    background-color: green;
+}
+
+.offline{
+    composes: status;
+    background-color: red;
+}
